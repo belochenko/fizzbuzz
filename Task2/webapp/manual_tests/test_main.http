@@ -1,11 +1,19 @@
-# Test your FastAPI endpoints
-
+# curl -X 'GET'
+#  'http://localhost:5050/'
+#  -H 'accept: application/json'
 GET http://localhost:5050/
-#Accept: application/json
+accept: application/json
 
 ###
 
-POST http://0.0.0.0:5050/summarize/
-Accept: application/json
+
+# curl -X 'POST'
+#  'http://localhost:5050/summarize/?large_text=If%20you%27re%20using%20Microsoft%20Windows%20or%20a%20flavor%20of%20Unix%20and%20have%20a%20connection%20to%20the%20Internet%2C%20there%20is%20a%20handy%20program%20to%20see%20if%20a%20computer%20on%20the%20Internet%20is%20alive.%20It%27s%20called%20ping%2C%20probably%20after%20the%20sound%20made%20by%20older%20submarine%20sonar%20systems.1%20If%20you%20are%20using%20Windows%2C%20start%20a%20command%20prompt%20window.%20If%20you%27re%20using%20a%20flavor%20of%20Unix%2C%20get%20to%20a%20command%20prompt.%20Type%20ping%20www.yahoo.com.%20The%20ping%20program%20will%20send%20a%20%27ping%27%20%28actually%20an%20ICMP%20%28Internet%20Control%20Message%20Protocol%29%20echo%20request%20message%29%20to%20the%20named%20computer.%20The%20pinged%20computer%20will%20respond%20with%20a%20reply.%20The%20ping%20program%20will%20count%20the%20time%20expired%20until%20the%20reply%20comes%20back%20%28if%20it%20does%29.%20Also%2C%20if%20you%20enter%20a%20domain%20name%20%28i.e.%20www.yahoo.com%29%20instead%20of%20an%20IP%20address%2C%20ping%20will%20resolve%20the%20domain%20name%20and%20display%20the%20computer%27s%20IP%20address.%20More%20on%20domain%20names%20and%20address%20resolution%20later.'
+#  -H 'accept: application/json'
+#  -d ''
+POST http://localhost:5050/summarize/?large_text=If%20you%27re%20using%20Microsoft%20Windows%20or%20a%20flavor%20of%20Unix%20and%20have%20a%20connection%20to%20the%20Internet%2C%20there%20is%20a%20handy%20program%20to%20see%20if%20a%20computer%20on%20the%20Internet%20is%20alive.%20It%27s%20called%20ping%2C%20probably%20after%20the%20sound%20made%20by%20older%20submarine%20sonar%20systems.1%20If%20you%20are%20using%20Windows%2C%20start%20a%20command%20prompt%20window.%20If%20you%27re%20using%20a%20flavor%20of%20Unix%2C%20get%20to%20a%20command%20prompt.%20Type%20ping%20www.yahoo.com.%20The%20ping%20program%20will%20send%20a%20%27ping%27%20%28actually%20an%20ICMP%20%28Internet%20Control%20Message%20Protocol%29%20echo%20request%20message%29%20to%20the%20named%20computer.%20The%20pinged%20computer%20will%20respond%20with%20a%20reply.%20The%20ping%20program%20will%20count%20the%20time%20expired%20until%20the%20reply%20comes%20back%20%28if%20it%20does%29.%20Also%2C%20if%20you%20enter%20a%20domain%20name%20%28i.e.%20www.yahoo.com%29%20instead%20of%20an%20IP%20address%2C%20ping%20will%20resolve%20the%20domain%20name%20and%20display%20the%20computer%27s%20IP%20address.%20More%20on%20domain%20names%20and%20address%20resolution%20later.
+accept: application/json
+Content-Type: application/x-www-form-urlencoded
 
 ###
+

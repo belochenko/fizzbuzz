@@ -1,0 +1,11 @@
+# Test your FastAPI endpoints
+
+GET http://localhost:5050/
+#Accept: application/json
+
+###
+
+POST http://0.0.0.0:5050/summarize/
+Accept: application/json
+
+###
